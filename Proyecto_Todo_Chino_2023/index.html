@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Chino</title>
+
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <!-- Pre Carga -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- <script src="js/index.js"></script> -->
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/chino.css" as="style">
+    <link rel="stylesheet" href="css/chino.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Pre Carga Fin -->
+
+    <!-- Cirrus css     -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cirrus-ui/dist/cirrus.min.css"> -->
+<!-- Fin Cirrus -->
+</head>
+<body>
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logoTodochino" href="index.html">
+                    <h1 class="nombre_logo no-margin centrar-texto">Todo <span class="logo__bold">Chinaski</span></h1>
+                    
+                </a>
+                <input type="search" name="searchBar" id="sBar">
+                <button class="searchButton" type="button">Buscar</button>
+                <nav class="navegacion_Top">
+                    <a href="registro.html" class="navegacion__enlace">Registrate</a>
+                    <a href="toDo" class="navegacion__enlace">Sign In</a>
+                    <a href="toDo" class="navegacion__enlace">Carrito</a>
+                    <a href="toDo" class="navegacion__enlace">Ordenes</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+        <div class="header_heroBanner">
+            <h2 class="heroBanner">aca va el hero banner</h2>
+        </div>
+        <aside class="CategoriasSidebar">
+            <h3>Categorias</h3>
+            <ul class="categorias no-padding no-bullets">
+                <li><a href="entrada.html" class="boton boton--secundario">Inmuebles</a></li> 
+                <li><a href="entrada.html" class="boton boton--secundario">Ropa</a></li>  
+                <li><a href="entrada.html" class="boton boton--secundario">Autos</a></li>  
+                <li><a href="entrada.html" class="boton boton--secundario">Muebles</a></li>  
+                <li><a href="entrada.html" class="boton boton--secundario">Arte</a></li>  
+                <li><a href="entrada.html" class="boton boton--secundario">Coleccion</a></li>
+            </ul>
+
+        </aside>
+
+    <div class="contenedor contenido-principal">
+        <main class="ecommerce">
+            <h3>ofertas</h3>
+            <div class="grid animate__animated animate__pulse">
+                <div class="producto ">
+                <a href="producto.html">
+                    <img class="producto__imagen" src="img/cyan-lavarropa.jpg" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Lavarropa</p>
+                        <p class="producto__precio">$7000</p>
+                    </div>
+                </a>
+                </div> 
+                <div class="producto">
+                    <a href="producto.html">
+                        <img class="producto__imagen" src="img/calienta-camas-cuori-1-plaza-modelo-caribe.png" alt="imagen camisa">
+                        <div class="producto__informacion">
+                            <p class="producto__nombre">Calientacama</p>
+                            <p class="producto__precio">$600</p>
+                        </div>
+                    </a>
+                </div> 
+                <div class="producto">
+                    <a href="producto.html">
+                        <img class="producto__imagen" src="img/tv-led-samsung-43-un43t5300-fhd-smart-tv-led-samsung-43-un43t5300-fhd-smart.jpg" alt="imagen camisa">
+                        <div class="producto__informacion">
+                            <p class="producto__nombre">Tv Samsung</p>
+                            <p class="producto__precio">$15000</p>
+                        </div>
+                    </a>
+                </div> 
+                <div class="producto">
+                    <a href="producto.html">
+                        <img class="producto__imagen" src="img/Sin título.jpg" alt="imagen camisa">
+                        <div class="producto__informacion">
+                            <p class="producto__nombre">Jarra Electrica</p>
+                            <p class="producto__precio">$450</p>
+                        </div>
+                    </a>
+                </div> 
+                <div class="producto">
+                    <a href="producto.html">
+                        <img class="producto__imagen" src="img/cyan-lavarropa.jpg" alt="imagen camisa">
+                        <div class="producto__informacion">
+                            <p class="producto__nombre">Lavarropa</p>
+                            <p class="producto__precio">$7000</p>
+                        </div>
+                    </a>
+                </div> 
+            </div>
+            
+
+        </main>
+        
+    </div>
+    <footer class="footer">
+        <p class="footer_texto">Mangua Microsystems 2023</p>
+        <a  href="ayuda.html" class="helpLink">Ayuda</a>
+    </footer>
+
+</body>
+</html>

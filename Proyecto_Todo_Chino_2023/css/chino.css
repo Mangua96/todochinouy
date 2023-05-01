@@ -1,0 +1,262 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-image: linear-gradient(to bottom,  #bebebe 0%, var(--blanco) 100%);
+}
+
+/* Globales */
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+/* utiles */
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+/* fin utiles */
+.ecommerce {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.header{
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(184, 184, 184);
+}
+.header__texto {
+    text-align: center;
+    color: var(--negro);
+    margin-top: 5rem;
+ }
+ .header_heroBanner{
+    height: 20rem;
+ }
+
+.barra {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    .navegacion_Top {
+        display: flex;
+        gap: 2rem;
+    }
+}
+.logoTodochino {
+    color: var(--negro);
+
+}
+.nombre_logo {
+    font-weight: 400;
+}
+.logo__bold {
+    font-weight: 700;
+}
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--negro);
+}
+
+.header_heroBanner{
+    text-align: center;
+}
+.searchBar{
+    justify-content: center;
+}
+.searchButton{
+      align-items: center;
+      background-color: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: .25rem;
+      box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+      box-sizing: border-box;
+      color: rgba(0, 0, 0, 0.85);
+      cursor: pointer;
+      display: inline-flex;
+      font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      justify-content: center;
+      line-height: 1.25;
+      margin: 0;
+      min-height: 3rem;
+      padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+      position: relative;
+      text-decoration: none;
+      transition: all 250ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: baseline;
+      width: auto;
+    }
+.searchButton:hover,
+.searchBar:focus {
+      border-color: rgba(0, 0, 0, 0.15);
+      box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+      color: rgba(0, 0, 0, 0.65);
+}
+.searchButton:hover {
+      transform: translateY(-1px);
+}
+.button-6:active {
+      background-color: #F0F0F1;
+      border-color: rgba(0, 0, 0, 0.15);
+      box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+      color: rgba(0, 0, 0, 0.65);
+      transform: translateY(0);
+}
+.helpLink{
+    float: right;
+    margin-right: 5rem;
+}
+.footer{
+    justify-content: right;
+}
+.CategoriasSidebar{
+    max-width: 15rem;
+    float: left;
+    margin-left: 2rem;
+    box-sizing: border-box;
+    /* border-style: dashed solid; */
+}
+.producto {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-style: dashed solid;
+}
+
+.producto__nombre {
+    font-size: 2rem;
+}
+.producto__precio {
+    font-size: 2rem;
+    color: black;
+}
+.producto__nombre,
+.producto__precio {
+    font-family: var(--fuenteParrafos);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.formulario {
+    background-color: #f5f5aa;
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-style: dashed solid;
+
+}
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    transform: uppercase;
+    font-weight: 700;
+    margin: bottom;
+    color: var(--rojizo);
+}
+.campo{
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+}
+.campo label{
+    color: var(--negro);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+
+}
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.heroRegistro{
+    margin-left: 40%;
+    height: 10rem;
+    justify-content: center;
+}
+.heroBannerReg{
+    height: 10rem;
+    justify-content: right;
+}
+.producto:hover{
+    animation: animate__pulse;
+}
+.footer_texto{
+    height: 10rem;
+    margin-top: 12rem;
+    margin-left: 2rem;
+}
